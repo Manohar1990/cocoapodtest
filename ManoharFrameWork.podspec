@@ -31,17 +31,16 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://in-telligent.com/"
   spec.license      = "MIT"
-  spec.author       = { "Manohar Pitla" => "manohar.pitla@senecaglobal.com" }
+  spec.author       = { "Manohar1990" => "manohar.pitla@senecaglobal.com" }
   spec.platform     = :ios, "13.0"
   # spec.deployment_target = '8.0'
   spec.vendored_frameworks = "ManoharFrameWork.framework"
-  # spec.source            = { :git => "git@bitbucket.org:senecaglobal/int-openapi-framework-ios-test.git", :tag => "#{spec.version}" }
-  spec.source =   { :http => "file:///Users/manoharpitla/Desktop/cocoapodtest/ManoharFrameWork.zip"} 
+  spec.source =   { :type => "zip", :http => "file:///Users/manoharpitla/Desktop/cocoapodtest/ManoharFrameWork.zip"}
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # spec.swift_versions  = "5.0"
     spec.requires_arc = true
-  # spec.source_files  = "ManoharFrameWork/**/*.swift"
+  spec.source_files  = "ManoharFrameWork/Classes/**/*.swift"
   # spec.exclude_files = "Classes/Exclude"
   # spec.dependency 'ActiveLabel'
   # spec.dependency 'Alamofire'
